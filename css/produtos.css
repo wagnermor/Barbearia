@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #bbb;
+    padding: 20px 0;
+}
+
+.top-box {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 125px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    /* margin-left: 15px; */
+}
+nav li + li {
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* main */
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    border-radius: 8px;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: solid 2px #000;
+}
+.produtos li:hover {
+    box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.produtos p:nth-child(2n+1) {
+    font-size: 18px;
+}
+.produtos p:nth-child(3n+1) {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* footer */
+
+footer {
+    background: url("../img/bg.jpg");
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 13px;
+}
+.copyright {
+    margin-top: 20px;
+}
+.copy-unicode {
+    font-size: 16px;
+}
