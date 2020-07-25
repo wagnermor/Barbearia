@@ -47,40 +47,65 @@ nav a:hover {
 }
 
 /* main */
-.produtos {
+main {
     width: 940px;
     margin: 0 auto;
-    padding: 50px;
 }
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    border-radius: 8px;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: solid 2px #000;
+
+form {
+    margin: 40px 0;
 }
-.produtos li:hover {
-    box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.4);
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    padding: 10px 25px;
+    margin: 0 0 20px;
+    width: 50%;
+    outline: none;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+form input[type=submit] {
+    width: 40%;
+    padding: 15px 0;
+    /* background-image: url('../img/bg.jpg'); */
+    background-color: orange;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: bold;
     cursor: pointer;
-}
-.produtos li:hover h2 {
-    font-size: 34px;
-}
-.produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-.produtos p:nth-child(2n+1) {
     font-size: 18px;
+    transition: 1s all;
 }
-.produtos p:nth-child(3n+1) {
+form input[type=submit]:hover {
+    background-color: orangered;
+    transform: scale(1.2); /* 1.2 corresponde ao acréscimo de 20% */
+}
+
+table {
+    margin: 20px 0 40px;
+    border-collapse: collapse;
+}
+thead {
+    background-color: #555;
+    color: #fff;
     font-weight: bold;
-    font-size: 22px;
-    margin-top: 10px;
+}
+td, th {
+    border: solid 1px #000;
+    padding: 8px 15px;
+    /* border-spacing: 0px; */
 }
 
 /* footer */
